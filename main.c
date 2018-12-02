@@ -64,14 +64,20 @@ struct inzeraty* n(FILE **file,int *pocet_zaznamov,struct inzeraty *prvy,struct 
 
 int main()
 {
+    int pocet_zaznamov=0;
     char c;
+
+    FILE *file=NULL;
+
+    struct inzeraty *prvy;
+    struct inzeraty *act;
 
     while(1)
     {
         scanf("%c",&c);
         switch(c)
         {
-
+            case('n'): prvy = n(&file,&pocet_zaznamov,prvy,act);break;
         }
     }
     return 0;
